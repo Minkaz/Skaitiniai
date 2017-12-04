@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniModel4.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Zaidejas">
+    <Key>
+      <PropertyRef Name="ZaidejoID" />
+    </Key>
+    <Property Name="ZaidejoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Vardas" Type="nvarchar" MaxLength="50" />
+    <Property Name="Pavarde" Type="nvarchar" MaxLength="50" />
+    <Property Name="Komanda" Type="nvarchar" MaxLength="50" />
+    <Property Name="Suzaista" Type="int" />
+    <Property Name="PelnytiTaskai" Type="int" />
+    <Property Name="Blokai" Type="int" />
+    <Property Name="Asistai" Type="int" />
+    <Property Name="Klaidos" Type="int" />
+    <Property Name="Ace" Type="int" />
+  </EntityType>
+  <EntityContainer Name="UniModel4StoreContainer">
+    <EntitySet Name="Zaidejas" EntityType="Self.Zaidejas" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

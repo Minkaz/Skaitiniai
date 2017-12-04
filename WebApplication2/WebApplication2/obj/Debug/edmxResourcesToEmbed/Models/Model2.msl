@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UniModel2StoreContainer" CdmEntityContainer="UniEntities2">
+    <EntitySetMapping Name="Turnyras">
+      <EntityTypeMapping TypeName="UniModel2.Turnyras">
+        <MappingFragment StoreEntitySet="Turnyras">
+          <ScalarProperty Name="TurnyroID" ColumnName="TurnyroID" />
+          <ScalarProperty Name="TurnyroPavadinimas" ColumnName="TurnyroPavadinimas" />
+          <ScalarProperty Name="TurnyroVieta" ColumnName="TurnyroVieta" />
+          <ScalarProperty Name="TurnyroData" ColumnName="TurnyroData" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

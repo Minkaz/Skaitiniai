@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UniModel4StoreContainer" CdmEntityContainer="UniEntities5">
+    <EntitySetMapping Name="Zaidejas">
+      <EntityTypeMapping TypeName="UniModel4.Zaidejas">
+        <MappingFragment StoreEntitySet="Zaidejas">
+          <ScalarProperty Name="ZaidejoID" ColumnName="ZaidejoID" />
+          <ScalarProperty Name="Vardas" ColumnName="Vardas" />
+          <ScalarProperty Name="Pavarde" ColumnName="Pavarde" />
+          <ScalarProperty Name="Komanda" ColumnName="Komanda" />
+          <ScalarProperty Name="Suzaista" ColumnName="Suzaista" />
+          <ScalarProperty Name="PelnytiTaskai" ColumnName="PelnytiTaskai" />
+          <ScalarProperty Name="Blokai" ColumnName="Blokai" />
+          <ScalarProperty Name="Asistai" ColumnName="Asistai" />
+          <ScalarProperty Name="Klaidos" ColumnName="Klaidos" />
+          <ScalarProperty Name="Ace" ColumnName="Ace" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

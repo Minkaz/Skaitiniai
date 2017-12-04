@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniModel3.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Varzybos">
+    <Key>
+      <PropertyRef Name="VarzybuID" />
+    </Key>
+    <Property Name="VarzybuID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Komanda1" Type="nvarchar" MaxLength="50" />
+    <Property Name="Komanda2" Type="nvarchar" MaxLength="50" />
+    <Property Name="Nugaletoja" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="UniModel3StoreContainer">
+    <EntitySet Name="Varzybos" EntityType="Self.Varzybos" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

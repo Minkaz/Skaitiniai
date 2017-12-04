@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ulTeam = $('#ulTeam');
+
+            $('#btn').click(function (serviceBasePath) {
+                $.ajax({
+                    type: 'GET',
+                    url: 'http://localhost:30140/' + 'api/Komanda',
+                    dataType: 'json',
+                    success: function (data) {
+                        ulTeam.empty();
+                        $.each(data, function (index, val) {
+                            var fullName = val.KomandosPavadinimas;
+                            ulTeam.append('<li>' + fullName + '</li>')
+                        });
+
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+        <input id="btn" type="button" value="Get all teams" />
+        <ul id="ulTeam"></ul>
+ 
+</body>
+</html>

@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="UniModel4.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Zaidejas">
+          <Key>
+            <PropertyRef Name="ZaidejoID" />
+          </Key>
+          <Property Name="ZaidejoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Vardas" Type="nvarchar" MaxLength="50" />
+          <Property Name="Pavarde" Type="nvarchar" MaxLength="50" />
+          <Property Name="Komanda" Type="nvarchar" MaxLength="50" />
+          <Property Name="Suzaista" Type="int" />
+          <Property Name="PelnytiTaskai" Type="int" />
+          <Property Name="Blokai" Type="int" />
+          <Property Name="Asistai" Type="int" />
+          <Property Name="Klaidos" Type="int" />
+          <Property Name="Ace" Type="int" />
+        </EntityType>
+        <EntityContainer Name="UniModel4StoreContainer">
+          <EntitySet Name="Zaidejas" EntityType="Self.Zaidejas" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="UniModel4" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Zaidejas">
+          <Key>
+            <PropertyRef Name="ZaidejoID" />
+          </Key>
+          <Property Name="ZaidejoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Vardas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Pavarde" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Komanda" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Suzaista" Type="Int32" />
+          <Property Name="PelnytiTaskai" Type="Int32" />
+          <Property Name="Blokai" Type="Int32" />
+          <Property Name="Asistai" Type="Int32" />
+          <Property Name="Klaidos" Type="Int32" />
+          <Property Name="Ace" Type="Int32" />
+        </EntityType>
+        <EntityContainer Name="UniEntities5" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Zaidejas" EntityType="Self.Zaidejas" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="UniModel4StoreContainer" CdmEntityContainer="UniEntities5">
+          <EntitySetMapping Name="Zaidejas">
+            <EntityTypeMapping TypeName="UniModel4.Zaidejas">
+              <MappingFragment StoreEntitySet="Zaidejas">
+                <ScalarProperty Name="ZaidejoID" ColumnName="ZaidejoID" />
+                <ScalarProperty Name="Vardas" ColumnName="Vardas" />
+                <ScalarProperty Name="Pavarde" ColumnName="Pavarde" />
+                <ScalarProperty Name="Komanda" ColumnName="Komanda" />
+                <ScalarProperty Name="Suzaista" ColumnName="Suzaista" />
+                <ScalarProperty Name="PelnytiTaskai" ColumnName="PelnytiTaskai" />
+                <ScalarProperty Name="Blokai" ColumnName="Blokai" />
+                <ScalarProperty Name="Asistai" ColumnName="Asistai" />
+                <ScalarProperty Name="Klaidos" ColumnName="Klaidos" />
+                <ScalarProperty Name="Ace" ColumnName="Ace" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

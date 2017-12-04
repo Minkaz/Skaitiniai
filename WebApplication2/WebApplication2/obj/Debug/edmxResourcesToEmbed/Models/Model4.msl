@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UniModel3StoreContainer" CdmEntityContainer="UniEntities4">
+    <EntitySetMapping Name="Varzybos">
+      <EntityTypeMapping TypeName="UniModel3.Varzybos">
+        <MappingFragment StoreEntitySet="Varzybos">
+          <ScalarProperty Name="VarzybuID" ColumnName="VarzybuID" />
+          <ScalarProperty Name="Komanda1" ColumnName="Komanda1" />
+          <ScalarProperty Name="Komanda2" ColumnName="Komanda2" />
+          <ScalarProperty Name="Nugaletoja" ColumnName="Nugaletoja" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniModel4" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Zaidejas">
+    <Key>
+      <PropertyRef Name="ZaidejoID" />
+    </Key>
+    <Property Name="ZaidejoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Vardas" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Pavarde" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Komanda" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Suzaista" Type="Int32" />
+    <Property Name="PelnytiTaskai" Type="Int32" />
+    <Property Name="Blokai" Type="Int32" />
+    <Property Name="Asistai" Type="Int32" />
+    <Property Name="Klaidos" Type="Int32" />
+    <Property Name="Ace" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="UniEntities5" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Zaidejas" EntityType="Self.Zaidejas" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="UniModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Komanda">
+    <Key>
+      <PropertyRef Name="KomandosID" />
+    </Key>
+    <Property Name="KomandosID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="KomandosPavadinimas" Type="nvarchar" MaxLength="50" />
+    <Property Name="Treneris" Type="nvarchar" MaxLength="50" />
+    <Property Name="Lyga" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityContainer Name="UniModel1StoreContainer">
+    <EntitySet Name="Komanda" EntityType="Self.Komanda" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
